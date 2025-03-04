@@ -8,11 +8,11 @@ export default function Banner() {
       className="w-full mx-auto h-screen flex flex-col md:flex-row-reverse items-center justify-center bg-gray-800 px-6"
     >
       {/* Left Side - Enlarged Image on Large Screens */}
-      <div className="w-3/4 sm:w-2/3 md:w-1/2 flex justify-center mb-6 md:mb-0">
+      <div className=" bg-amber- w-3/4  md:w-1/2 flex justify-center mb-6 md:mb-0">
         <img
           src="dp-Photoroom.png" // Ensure the image is in the "public" folder
           alt="Profile"
-          className="w-48 h-48 sm:w-64 sm:h-64 md:w-[500px] md:h-[500px] lg:w-[800px] lg:h-[650px] object-cover rounded-xl shadow-lg"
+          className="bg-red- w-[200px] h-auto object-cover  md:w-[500px] md:h-[500px] lg:w-[800px] lg:h-[650px]  rounded-xl shadow-lg"
         />
       </div>
 

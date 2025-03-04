@@ -27,8 +27,8 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700">
+        <div className=" md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700 ">
             <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -47,14 +47,14 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white shadow-md"
+            className="md:hidden bg-gray-900 text-amber-100 shadow-md"
           >
             {["Home", "Education", "Organizations", "Projects", "Contact"].map(
               (item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase().replace(" ", "")}`}
-                  className="block px-6 py-3 text-gray-700 hover:bg-gray-100"
+                  className="block px-6 py-3 text-gray-100 hover:bg-gray-100"
                   onClick={() => setIsOpen(false)}
                 >
                   {item}

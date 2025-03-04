@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+
+#home {
+    background: linear-gradient(to right, #021231, #010417);
+    background-size: 200% 100%; /* Ensures the animation works */
+    color: white;
+    transition: all 0.5s ease;
+    animation: wave 5s infinite linear 0s;
+    
+    /* Center the content */
+}
+#nav{
+    background: linear-gradient(to right, #141046, #0a0519);
+    background-size: 200% 100%; /* Ensures the animation works */
+    color: white;
+    transition: all 0.5s ease;
+    animation: wave 5s infinite linear 0s;
+    box-shadow: #021231 10px 20px 10px 30px;
+    
+    /* Center the content */
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#root{
+    background-color: #1b61ed;
+    color: white;   
+}
+body {
+    font-family: "Montserrat", sans-serif;
+
+
+  }
+  

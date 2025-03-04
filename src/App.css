@@ -1,0 +1,12 @@
+@import "tailwindcss";
+.App {
+  text-align: center;
+}
+.body {
+  background-color: #1b61ed;
+  color: white;
+}
+#root{
+    background-color: #1b61ed;
+    color: white;   
+}
